@@ -30,8 +30,8 @@ struct ContentView: View {
                     Text(friend.birthday, format: .dateTime.month(.wide).day().year())
                 }
             }
+            .navigationTitle("Birthdays")
         }
-        .navigationTitle("Birthdays")
         .safeAreaInset(edge: .bottom) {
             VStack(alignment: .center, spacing: 20) {
                 Text("New Birthday")
