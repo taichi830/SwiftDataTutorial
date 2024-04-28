@@ -15,6 +15,8 @@
 		526A46862BDE5B17003C5BD5 /* SwiftDataTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46852BDE5B17003C5BD5 /* SwiftDataTutorialUITests.swift */; };
 		526A46882BDE5B17003C5BD5 /* SwiftDataTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46872BDE5B17003C5BD5 /* SwiftDataTutorialUITestsLaunchTests.swift */; };
 		526A46952BDE5DAC003C5BD5 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46942BDE5DAC003C5BD5 /* Friend.swift */; };
+		526A46972BDEB26C003C5BD5 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46962BDEB26C003C5BD5 /* Birthday.swift */; };
+		526A46992BDEB293003C5BD5 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46982BDEB293003C5BD5 /* Movies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		526A46852BDE5B17003C5BD5 /* SwiftDataTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataTutorialUITests.swift; sourceTree = "<group>"; };
 		526A46872BDE5B17003C5BD5 /* SwiftDataTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		526A46942BDE5DAC003C5BD5 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		526A46962BDEB26C003C5BD5 /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
+		526A46982BDEB293003C5BD5 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				526A466F2BDE5B17003C5BD5 /* SwiftDataTutorial.entitlements */,
 				526A46702BDE5B17003C5BD5 /* Preview Content */,
 				526A46942BDE5DAC003C5BD5 /* Friend.swift */,
+				526A46962BDEB26C003C5BD5 /* Birthday.swift */,
+				526A46982BDEB293003C5BD5 /* Movies.swift */,
 			);
 			path = SwiftDataTutorial;
 			sourceTree = "<group>";
@@ -262,6 +268,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526A46992BDEB293003C5BD5 /* Movies.swift in Sources */,
+				526A46972BDEB26C003C5BD5 /* Birthday.swift in Sources */,
 				526A46952BDE5DAC003C5BD5 /* Friend.swift in Sources */,
 				526A466C2BDE5B16003C5BD5 /* ContentView.swift in Sources */,
 				526A466A2BDE5B16003C5BD5 /* SwiftDataTutorialApp.swift in Sources */,

@@ -9,49 +9,25 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @Query(sort: \Friend.birthday) private var friends: [Friend]
-    @Environment(\.modelContext) private var context
+    @State private var selection: Tab = .featured
     
-    @State private var newName: String = ""
-    @State private var newDate: Date = Date.now
-    
+    enum Tab {
+        case featured
+        case list
+    }
     
     var body: some View {
-        NavigationStack {
-            List(friends) { friend in
-                HStack {
-                    if friend.isBirthdayToday {
-                        Image(systemName: "birthday.cake")
-                    }
-                    
-                    Text(friend.name)
-                        .bold(friend.isBirthdayToday)
-                    Spacer()
-                    Text(friend.birthday, format: .dateTime.month(.wide).day().year())
+        TabView(selection: $selection,
+                content:  {
+            Birthday().tag(Tab.featured)
+                .tabItem {
+                    Label("Birthday", systemImage: "birthday.cake")
                 }
-            }
-            .navigationTitle("Birthdays")
-        }
-        .safeAreaInset(edge: .bottom) {
-            VStack(alignment: .center, spacing: 20) {
-                Text("New Birthday")
-                    .font(.headline)
-                DatePicker(selection: $newDate, in: Date.distantPast...Date.now, displayedComponents: .date) {
-                    TextField("Name", text: $newName)
-                        .textFieldStyle(.roundedBorder)
+            Movies().tag(Tab.list)
+                .tabItem {
+                    Label("Movie", systemImage: "list.bullet")
                 }
-                Button("Save") {
-                    let newFriend = Friend(name: newName, birthday: newDate)
-                    context.insert(newFriend)
-                    
-                    newName = ""
-                    newDate = .now
-                }
-                .bold()
-            }
-            .padding()
-            .background(.bar)
-        }
+        })
     }
 }
 
