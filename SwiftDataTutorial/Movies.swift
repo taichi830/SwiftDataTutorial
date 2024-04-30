@@ -63,5 +63,5 @@ struct Movies: View {
 
 #Preview {
     Movies()
-        .modelContainer(for: Movie.self, inMemory: true)
+        .modelContainer(SampleData.shared.modelContainer)
 }
