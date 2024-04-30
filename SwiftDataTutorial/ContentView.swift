@@ -17,8 +17,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-        TabView(selection: $selection,
-                content:  {
+        TabView(selection: $selection) {
             Birthday().tag(Tab.featured)
                 .tabItem {
                     Label("Birthday", systemImage: "birthday.cake")
@@ -27,7 +26,7 @@ struct ContentView: View {
                 .tabItem {
                     Label("Movie", systemImage: "list.bullet")
                 }
-        })
+        }
     }
 }
 
