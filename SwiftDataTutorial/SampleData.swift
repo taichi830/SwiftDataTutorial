@@ -14,7 +14,7 @@ class SampleData {
     
     let modelContainer: ModelContainer
     
-    var contezt: ModelContext {
+    var context: ModelContext {
         modelContainer.mainContext
     }
     
@@ -35,13 +35,17 @@ class SampleData {
     
     func insertSampleData() {
         for movie in Movie.sampleData {
-            contezt.insert(movie)
+            context.insert(movie)
         }
         
         do {
-            try contezt.save()
+            try context.save()
         } catch {
             print("Sample data context failed to save.")
         }
+    }
+    
+    var movie: Movie {
+        Movie.sampleData[0]
     }
 }

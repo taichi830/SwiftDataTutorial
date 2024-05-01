@@ -12,14 +12,12 @@ struct Movies: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var movies: [Movie]
     
-    
     var body: some View {
         NavigationSplitView {
             List {
                 ForEach(movies) { movie in
                     NavigationLink {
-                        Text(movie.title)
-                            .navigationTitle("Movie")
+                        MovieDetail(movie: movie)
                     } label: {
                         Text(movie.title)
                     }
