@@ -10,19 +10,29 @@ import SwiftData
 
 struct Movies: View {
     @Environment(\.modelContext) private var modelContext
-    @Query private var movies: [Movie]
+    @Query(sort: \Movie.title) private var movies: [Movie]
+    
+    @State private var newMovie: Movie?
     
     var body: some View {
         NavigationSplitView {
-            List {
-                ForEach(movies) { movie in
-                    NavigationLink {
-                        MovieDetail(movie: movie)
-                    } label: {
-                        Text(movie.title)
+            Group {
+                if !movies.isEmpty {
+                    List {
+                        ForEach(movies) { movie in
+                            NavigationLink {
+                                MovieDetail(movie: movie, isNew: false)
+                            } label: {
+                                Text(movie.title)
+                            }
+                        }
+                        .onDelete(perform: deleteItems)
+                    }
+                } else {
+                    ContentUnavailableView {
+                        Label("No Movies", systemImage: "film.stack")
                     }
                 }
-                .onDelete(perform: deleteItems)
             }
             .navigationTitle("Movies")
             .toolbar {
@@ -35,6 +45,12 @@ struct Movies: View {
                     }
                 }
             }
+            .sheet(item: $newMovie) { movie in
+                NavigationStack {
+                    MovieDetail(movie: movie, isNew: true)
+                }
+                .interactiveDismissDisabled()
+            }
         } detail: {
             Text("Select a movie")
                 .navigationTitle("Movie")
@@ -46,6 +62,7 @@ struct Movies: View {
         withAnimation {
             let newItem = Movie(title: "New Movie", releaseDate: .now)
             modelContext.insert(newItem)
+            newMovie = newItem
         }
     }
     

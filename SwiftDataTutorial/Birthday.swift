@@ -56,6 +56,6 @@ struct Birthday: View {
 }
 
 #Preview {
-    ContentView()
+    Birthday()
         .modelContainer(for: Friend.self, inMemory: true)
 }
