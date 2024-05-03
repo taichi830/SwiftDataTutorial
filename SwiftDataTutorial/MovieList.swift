@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct Movies: View {
+struct MovieList: View {
     @Environment(\.modelContext) private var modelContext
     @Query(sort: \Movie.title) private var movies: [Movie]
     
@@ -77,6 +77,6 @@ struct Movies: View {
 }
 
 #Preview {
-    Movies()
+    MovieList()
         .modelContainer(SampleData.shared.modelContainer)
 }

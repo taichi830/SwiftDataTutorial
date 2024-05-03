@@ -18,11 +18,11 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            Birthday().tag(Tab.featured)
+            FriendList().tag(Tab.featured)
                 .tabItem {
                     Label("Birthday", systemImage: "birthday.cake")
                 }
-            Movies().tag(Tab.list)
+            MovieList().tag(Tab.list)
                 .tabItem {
                     Label("Movie", systemImage: "list.bullet")
                 }
@@ -32,5 +32,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
-        .modelContainer(for: [Friend.self, Movie.self], inMemory: true)
+        .modelContainer(SampleData.shared.modelContainer)
 }

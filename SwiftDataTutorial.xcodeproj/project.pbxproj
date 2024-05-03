@@ -15,11 +15,12 @@
 		526A46862BDE5B17003C5BD5 /* SwiftDataTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46852BDE5B17003C5BD5 /* SwiftDataTutorialUITests.swift */; };
 		526A46882BDE5B17003C5BD5 /* SwiftDataTutorialUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46872BDE5B17003C5BD5 /* SwiftDataTutorialUITestsLaunchTests.swift */; };
 		526A46952BDE5DAC003C5BD5 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46942BDE5DAC003C5BD5 /* Friend.swift */; };
-		526A46972BDEB26C003C5BD5 /* Birthday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46962BDEB26C003C5BD5 /* Birthday.swift */; };
-		526A46992BDEB293003C5BD5 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46982BDEB293003C5BD5 /* Movies.swift */; };
+		526A46972BDEB26C003C5BD5 /* FriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46962BDEB26C003C5BD5 /* FriendList.swift */; };
+		526A46992BDEB293003C5BD5 /* MovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46982BDEB293003C5BD5 /* MovieList.swift */; };
 		526A469B2BDFB266003C5BD5 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A469A2BDFB266003C5BD5 /* Movie.swift */; };
 		526A469D2BE109CC003C5BD5 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A469C2BE109CC003C5BD5 /* SampleData.swift */; };
 		526A469F2BE14681003C5BD5 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A469E2BE14681003C5BD5 /* MovieDetail.swift */; };
+		526A46A12BE544E0003C5BD5 /* FriendDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46A02BE544E0003C5BD5 /* FriendDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,11 +53,12 @@
 		526A46852BDE5B17003C5BD5 /* SwiftDataTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataTutorialUITests.swift; sourceTree = "<group>"; };
 		526A46872BDE5B17003C5BD5 /* SwiftDataTutorialUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDataTutorialUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		526A46942BDE5DAC003C5BD5 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
-		526A46962BDEB26C003C5BD5 /* Birthday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthday.swift; sourceTree = "<group>"; };
-		526A46982BDEB293003C5BD5 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
+		526A46962BDEB26C003C5BD5 /* FriendList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendList.swift; sourceTree = "<group>"; };
+		526A46982BDEB293003C5BD5 /* MovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieList.swift; sourceTree = "<group>"; };
 		526A469A2BDFB266003C5BD5 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		526A469C2BE109CC003C5BD5 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		526A469E2BE14681003C5BD5 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
+		526A46A02BE544E0003C5BD5 /* FriendDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +115,12 @@
 				526A466F2BDE5B17003C5BD5 /* SwiftDataTutorial.entitlements */,
 				526A46702BDE5B17003C5BD5 /* Preview Content */,
 				526A46942BDE5DAC003C5BD5 /* Friend.swift */,
-				526A46962BDEB26C003C5BD5 /* Birthday.swift */,
-				526A46982BDEB293003C5BD5 /* Movies.swift */,
+				526A46962BDEB26C003C5BD5 /* FriendList.swift */,
+				526A46982BDEB293003C5BD5 /* MovieList.swift */,
 				526A469A2BDFB266003C5BD5 /* Movie.swift */,
 				526A469C2BE109CC003C5BD5 /* SampleData.swift */,
 				526A469E2BE14681003C5BD5 /* MovieDetail.swift */,
+				526A46A02BE544E0003C5BD5 /* FriendDetail.swift */,
 			);
 			path = SwiftDataTutorial;
 			sourceTree = "<group>";
@@ -277,9 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526A46992BDEB293003C5BD5 /* Movies.swift in Sources */,
+				526A46A12BE544E0003C5BD5 /* FriendDetail.swift in Sources */,
+				526A46992BDEB293003C5BD5 /* MovieList.swift in Sources */,
 				526A469D2BE109CC003C5BD5 /* SampleData.swift in Sources */,
-				526A46972BDEB26C003C5BD5 /* Birthday.swift in Sources */,
+				526A46972BDEB26C003C5BD5 /* FriendList.swift in Sources */,
 				526A469B2BDFB266003C5BD5 /* Movie.swift in Sources */,
 				526A46952BDE5DAC003C5BD5 /* Friend.swift in Sources */,
 				526A466C2BDE5B16003C5BD5 /* ContentView.swift in Sources */,

@@ -10,15 +10,17 @@ import SwiftData
 
 @Model
 class Friend {
-    let name: String
-    let birthday: Date
+    var name: String
     
-    init(name: String, birthday: Date) {
+    init(name: String) {
         self.name = name
-        self.birthday = birthday
     }
     
-    var isBirthdayToday: Bool {
-        Calendar.current.isDateInToday(birthday)
-    }
+    static let sampleData = [
+        Friend(name: "Elena"),
+        Friend(name: "Graham"),
+        Friend(name: "Mayuri"),
+        Friend(name: "Rich"),
+        Friend(name: "Rody")
+    ]
 }
