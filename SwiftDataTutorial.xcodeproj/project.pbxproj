@@ -111,19 +111,13 @@
 		526A46682BDE5B16003C5BD5 /* SwiftDataTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				526A46A52BE55B3D003C5BD5 /* Models */,
+				526A46A42BE55B35003C5BD5 /* Views */,
 				526A46692BDE5B16003C5BD5 /* SwiftDataTutorialApp.swift */,
 				526A466B2BDE5B16003C5BD5 /* ContentView.swift */,
 				526A466D2BDE5B17003C5BD5 /* Assets.xcassets */,
 				526A466F2BDE5B17003C5BD5 /* SwiftDataTutorial.entitlements */,
 				526A46702BDE5B17003C5BD5 /* Preview Content */,
-				526A46942BDE5DAC003C5BD5 /* Friend.swift */,
-				526A46962BDEB26C003C5BD5 /* FriendList.swift */,
-				526A46982BDEB293003C5BD5 /* MovieList.swift */,
-				526A469A2BDFB266003C5BD5 /* Movie.swift */,
-				526A469C2BE109CC003C5BD5 /* SampleData.swift */,
-				526A469E2BE14681003C5BD5 /* MovieDetail.swift */,
-				526A46A02BE544E0003C5BD5 /* FriendDetail.swift */,
-				526A46A22BE55590003C5BD5 /* FilteredMovieList.swift */,
 			);
 			path = SwiftDataTutorial;
 			sourceTree = "<group>";
@@ -151,6 +145,44 @@
 				526A46872BDE5B17003C5BD5 /* SwiftDataTutorialUITestsLaunchTests.swift */,
 			);
 			path = SwiftDataTutorialUITests;
+			sourceTree = "<group>";
+		};
+		526A46A42BE55B35003C5BD5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				526A46A82BE55B7B003C5BD5 /* Movies */,
+				526A46A62BE55B64003C5BD5 /* Friends */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		526A46A52BE55B3D003C5BD5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				526A46942BDE5DAC003C5BD5 /* Friend.swift */,
+				526A469A2BDFB266003C5BD5 /* Movie.swift */,
+				526A469C2BE109CC003C5BD5 /* SampleData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		526A46A62BE55B64003C5BD5 /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				526A46962BDEB26C003C5BD5 /* FriendList.swift */,
+				526A46A02BE544E0003C5BD5 /* FriendDetail.swift */,
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		526A46A82BE55B7B003C5BD5 /* Movies */ = {
+			isa = PBXGroup;
+			children = (
+				526A46982BDEB293003C5BD5 /* MovieList.swift */,
+				526A469E2BE14681003C5BD5 /* MovieDetail.swift */,
+				526A46A22BE55590003C5BD5 /* FilteredMovieList.swift */,
+			);
+			path = Movies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
