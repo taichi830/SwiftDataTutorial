@@ -22,11 +22,11 @@ struct FriendList: View {
                         ForEach(friends) { friend in
                             NavigationLink {
                                 FriendDetail(friend: friend)
-                                    .navigationTitle("Friend")
                             } label: {
                                 Text(friend.name)
                             }
                         }
+                        .onDelete(perform: deleteFriends)
                     }
                 } else {
                     ContentUnavailableView {
@@ -47,12 +47,13 @@ struct FriendList: View {
             }
             .sheet(item: $newFriend) { friend in
                 NavigationStack {
-                    FriendDetail(friend: friend)
+                    FriendDetail(friend: friend, isNew: true)
                 }
                 .interactiveDismissDisabled()
             }
         } detail: {
             Text("Select a friend")
+                .navigationTitle("Friend")
         }
     }
     
