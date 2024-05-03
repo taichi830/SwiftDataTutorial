@@ -21,6 +21,7 @@
 		526A469D2BE109CC003C5BD5 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A469C2BE109CC003C5BD5 /* SampleData.swift */; };
 		526A469F2BE14681003C5BD5 /* MovieDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A469E2BE14681003C5BD5 /* MovieDetail.swift */; };
 		526A46A12BE544E0003C5BD5 /* FriendDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46A02BE544E0003C5BD5 /* FriendDetail.swift */; };
+		526A46A32BE55590003C5BD5 /* FilteredMovieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A46A22BE55590003C5BD5 /* FilteredMovieList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		526A469C2BE109CC003C5BD5 /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		526A469E2BE14681003C5BD5 /* MovieDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetail.swift; sourceTree = "<group>"; };
 		526A46A02BE544E0003C5BD5 /* FriendDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetail.swift; sourceTree = "<group>"; };
+		526A46A22BE55590003C5BD5 /* FilteredMovieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteredMovieList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				526A469C2BE109CC003C5BD5 /* SampleData.swift */,
 				526A469E2BE14681003C5BD5 /* MovieDetail.swift */,
 				526A46A02BE544E0003C5BD5 /* FriendDetail.swift */,
+				526A46A22BE55590003C5BD5 /* FilteredMovieList.swift */,
 			);
 			path = SwiftDataTutorial;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				526A469B2BDFB266003C5BD5 /* Movie.swift in Sources */,
 				526A46952BDE5DAC003C5BD5 /* Friend.swift in Sources */,
 				526A466C2BDE5B16003C5BD5 /* ContentView.swift in Sources */,
+				526A46A32BE55590003C5BD5 /* FilteredMovieList.swift in Sources */,
 				526A466A2BDE5B16003C5BD5 /* SwiftDataTutorialApp.swift in Sources */,
 				526A469F2BE14681003C5BD5 /* MovieDetail.swift in Sources */,
 			);

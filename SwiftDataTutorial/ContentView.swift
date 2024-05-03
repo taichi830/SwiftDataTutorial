@@ -18,13 +18,14 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            FriendList().tag(Tab.featured)
+            FilteredMovieList().tag(Tab.featured)
                 .tabItem {
-                    Label("Birthday", systemImage: "birthday.cake")
+                    Label("Movies", systemImage: "film.stack")
                 }
-            MovieList().tag(Tab.list)
+            
+            FriendList()
                 .tabItem {
-                    Label("Movie", systemImage: "list.bullet")
+                    Label("Friends", systemImage: "person.and.person")
                 }
         }
     }
